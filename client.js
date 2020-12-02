@@ -20,8 +20,13 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write('Name: TNT');
-    
   })
+
+  // conn.on('connect', () => {
+  //   setInterval(() => {
+  //     conn.write('Move: up');
+  //   }, 100)
+  // })
   
   return conn;
 }
