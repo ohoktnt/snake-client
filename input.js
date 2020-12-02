@@ -26,6 +26,8 @@ const handleUserInput = (key) => {
       break;
     case 'd':
       connection.write('Move: right');
+    case 't':
+      connection.write('Say: NOM NOM');
   }
 };
 
